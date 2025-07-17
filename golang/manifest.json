@@ -3,7 +3,7 @@
   "meta": {
     "name": "golang",
     "version": "0.0.1",
-    "logoPath": "",
+    "logoPath": "logo.png",
     "shortDescription": "",
     "longDescription": "",
     "upstreamVersions": null

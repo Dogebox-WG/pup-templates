@@ -3,7 +3,7 @@
   "meta": {
     "name": "rust",
     "version": "0.0.1",
-    "logoPath": "",
+    "logoPath": "logo.png",
     "shortDescription": "",
     "longDescription": "",
     "upstreamVersions": null

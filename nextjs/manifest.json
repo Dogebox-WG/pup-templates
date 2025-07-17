@@ -3,7 +3,7 @@
   "meta": {
     "name": "nextjs",
     "version": "1.0.0",
-    "logoPath": "",
+    "logoPath": "logo.png",
     "shortDescription": "",
     "longDescription": "",
     "upstreamVersions": null
