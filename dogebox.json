@@ -3,6 +3,10 @@
   "name": "Dogebox Pup Templates",
   "description": "A collection of Dogebox pup templates",
   "pups": [
-    { "location": "nextjs" }
+    { "location": "nextjs" },
+    { "location": "golang" },
+    { "location": "php" },
+    { "location": "rust" },
+    { "location": "python" }
   ]
 }

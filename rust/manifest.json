@@ -1,0 +1,44 @@
+{
+  "manifestVersion": 1,
+  "meta": {
+    "name": "rust",
+    "version": "0.0.1",
+    "logoPath": "",
+    "shortDescription": "",
+    "longDescription": "",
+    "upstreamVersions": null
+  },
+  "config": {
+    "sections": null
+  },
+  "container": {
+    "build": {
+      "nixFile": "pup.nix",
+      "nixFileSha256": "6c03852c69df1078b3e0bf853413bc255812cc57868437a86a52fff15ff52dbc"
+    },
+    "services": [
+      {
+        "name": "rust",
+        "command": {
+          "exec": "/bin/run.sh",
+          "cwd": "",
+          "env": null
+        }
+      }
+    ],
+    "exposes": [
+      {
+        "name": "UI",
+        "type": "http",
+        "port": 8080,
+        "interfaces": null,
+        "listenOnHost": false,
+        "webUI": true
+      }
+    ],
+    "requiresInternet": false
+  },
+  "interfaces": null,
+  "dependencies": [],
+  "metrics": null
+}

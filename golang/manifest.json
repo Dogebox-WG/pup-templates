@@ -1,0 +1,44 @@
+{
+  "manifestVersion": 1,
+  "meta": {
+    "name": "golang",
+    "version": "0.0.1",
+    "logoPath": "",
+    "shortDescription": "",
+    "longDescription": "",
+    "upstreamVersions": null
+  },
+  "config": {
+    "sections": null
+  },
+  "container": {
+    "build": {
+      "nixFile": "pup.nix",
+      "nixFileSha256": "5f8d31d5312436902dfb09d7063366c2f7cd44aa5a827683a43cb83380e7c7d4"
+    },
+    "services": [
+      {
+        "name": "golang",
+        "command": {
+          "exec": "/bin/run.sh",
+          "cwd": "",
+          "env": null
+        }
+      }
+    ],
+    "exposes": [
+      {
+        "name": "golang",
+        "type": "http",
+        "port": 8080,
+        "interfaces": null,
+        "listenOnHost": false,
+        "webUI": true
+      }
+    ],
+    "requiresInternet": false
+  },
+  "interfaces": [],
+  "dependencies": [],
+  "metrics": null
+}
