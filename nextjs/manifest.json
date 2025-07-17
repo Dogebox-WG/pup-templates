@@ -1,0 +1,44 @@
+{
+  "manifestVersion": 1,
+  "meta": {
+    "name": "nextjs",
+    "version": "1.0.0",
+    "logoPath": "",
+    "shortDescription": "",
+    "longDescription": "",
+    "upstreamVersions": null
+  },
+  "config": {
+    "sections": null
+  },
+  "container": {
+    "build": {
+      "nixFile": "pup.nix",
+      "nixFileSha256": "cd25da5b1d5bf8abf56fff1c087768b7098a17020e13644aed6f801a899ad95f"
+    },
+    "services": [
+      {
+        "name": "nextjs",
+        "command": {
+          "exec": "/bin/run.sh",
+          "cwd": "",
+          "env": null
+        }
+      }
+    ],
+    "exposes": [
+      {
+        "name": "UI",
+        "type": "http",
+        "port": 8080,
+        "interfaces": null,
+        "listenOnHost": false,
+        "webUI": true
+      }
+    ],
+    "requiresInternet": false
+  },
+  "interfaces": null,
+  "dependencies": [],
+  "metrics": null
+}

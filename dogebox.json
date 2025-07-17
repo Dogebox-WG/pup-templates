@@ -1,0 +1,8 @@
+{
+  "id": "dogebox-wg.pup-templates",
+  "name": "Dogebox Pup Templates",
+  "description": "A collection of Dogebox pup templates",
+  "pups": [
+    { "location": "nextjs" }
+  ]
+}
