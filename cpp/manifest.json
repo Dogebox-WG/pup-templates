@@ -1,0 +1,44 @@
+{
+  "manifestVersion": 1,
+  "meta": {
+    "name": "cpp",
+    "version": "0.0.1",
+    "logoPath": "logo.png",
+    "shortDescription": "",
+    "longDescription": "",
+    "upstreamVersions": null
+  },
+  "config": {
+    "sections": null
+  },
+  "container": {
+    "build": {
+      "nixFile": "pup.nix",
+      "nixFileSha256": "c1d034a227866d417be3d268dcb4f351db26eda1ecdf5bab8ff6160b00074f64"
+    },
+    "services": [
+      {
+        "name": "cpp",
+        "command": {
+          "exec": "/bin/run.sh",
+          "cwd": "",
+          "env": null
+        }
+      }
+    ],
+    "exposes": [
+      {
+        "name": "UI",
+        "type": "http",
+        "port": 8080,
+        "interfaces": null,
+        "listenOnHost": false,
+        "webUI": true
+      }
+    ],
+    "requiresInternet": false
+  },
+  "interfaces": null,
+  "dependencies": [],
+  "metrics": null
+}

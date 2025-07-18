@@ -1,0 +1,44 @@
+{
+  "manifestVersion": 1,
+  "meta": {
+    "name": "c",
+    "version": "0.0.1",
+    "logoPath": "logo.png",
+    "shortDescription": "",
+    "longDescription": "",
+    "upstreamVersions": null
+  },
+  "config": {
+    "sections": null
+  },
+  "container": {
+    "build": {
+      "nixFile": "pup.nix",
+      "nixFileSha256": "899d292f2482d12a36b81dc3230bc79f5278f65d8486b2fb04ce4ad4a50eeabe"
+    },
+    "services": [
+      {
+        "name": "c",
+        "command": {
+          "exec": "/bin/run.sh",
+          "cwd": "",
+          "env": null
+        }
+      }
+    ],
+    "exposes": [
+      {
+        "name": "UI",
+        "type": "http",
+        "port": 8080,
+        "interfaces": null,
+        "listenOnHost": false,
+        "webUI": true
+      }
+    ],
+    "requiresInternet": false
+  },
+  "interfaces": null,
+  "dependencies": [],
+  "metrics": null
+}

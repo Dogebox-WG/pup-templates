@@ -7,6 +7,9 @@
     { "location": "golang" },
     { "location": "php" },
     { "location": "rust" },
-    { "location": "python" }
+    { "location": "python" },
+    { "location": "nodejs" },
+    { "location": "c" },
+    { "location": "cpp" }
   ]
 }
