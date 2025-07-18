@@ -44,7 +44,7 @@ let
     export PORT=8080
     export HOSTNAME=0.0.0.0
 
-    ${pkgs.nodejs_22}/bin/node ${nextjs-prod}/node_modules/.bin/next start -p $PORT -H $HOSTNAME
+    ${pkgs.nodejs_22}/bin/node ${pup_nextjs_prod}/node_modules/.bin/next start -p $PORT -H $HOSTNAME
   '';
 
 in

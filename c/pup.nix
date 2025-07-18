@@ -15,7 +15,7 @@ let
 
   pup_c = pkgs.writeScriptBin "run.sh" ''
     #!${pkgs.stdenv.shell}
-    ${c_bin}/bin/c
+    ${pup_c_bin}/bin/c
   '';
 in
 {
