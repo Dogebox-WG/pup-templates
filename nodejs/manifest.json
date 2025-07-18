@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
   "meta": {
-    "name": "nodejs",
+    "name": "pup_nodejs",
     "version": "0.0.1",
     "logoPath": "logo.png",
     "shortDescription": "",
@@ -14,11 +14,11 @@
   "container": {
     "build": {
       "nixFile": "pup.nix",
-      "nixFileSha256": "23e38f581eca0632e7bc3b945c784c1d5ba6c10e1db887c8b484c2f85f11a7db"
+      "nixFileSha256": "a96b3f8e3a5f315c3d1d01dd203526346e68ed5ee26596c1d5ac3f6d6c33834b"
     },
     "services": [
       {
-        "name": "nodejs",
+        "name": "pup_nodejs",
         "command": {
           "exec": "/bin/run.sh",
           "cwd": "",

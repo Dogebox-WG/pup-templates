@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
   "meta": {
-    "name": "cpp",
+    "name": "pup_cpp",
     "version": "0.0.1",
     "logoPath": "logo.png",
     "shortDescription": "",
@@ -14,11 +14,11 @@
   "container": {
     "build": {
       "nixFile": "pup.nix",
-      "nixFileSha256": "c1d034a227866d417be3d268dcb4f351db26eda1ecdf5bab8ff6160b00074f64"
+      "nixFileSha256": "5ce6c695ea5017339cea21b5ec197a89bec6b157c35d151113e2709f54df6dfa"
     },
     "services": [
       {
-        "name": "cpp",
+        "name": "pup_cpp",
         "command": {
           "exec": "/bin/run.sh",
           "cwd": "",

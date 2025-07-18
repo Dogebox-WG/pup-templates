@@ -1,7 +1,7 @@
 { pkgs ? import <nixpkgs> {} }:
 
 let
-  golang_bin = pkgs.buildGoModule {
+  pup_golang_bin = pkgs.buildGoModule {
     pname = "golang";
     version = "0.0.1";
     src = ./.;
@@ -19,14 +19,14 @@ let
     '';
   };
 
-  golang = pkgs.writeScriptBin "run.sh" ''
+  pup_golang = pkgs.writeScriptBin "run.sh" ''
     #!${pkgs.stdenv.shell}
 
-    cd ${golang_bin}
+    cd ${pup_golang_bin}
 
     ./bin/golang
   '';
 in
 {
-  inherit golang;
+  inherit pup_golang;
 }

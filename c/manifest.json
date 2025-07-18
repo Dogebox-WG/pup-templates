@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
   "meta": {
-    "name": "c",
+    "name": "pup_c",
     "version": "0.0.1",
     "logoPath": "logo.png",
     "shortDescription": "",
@@ -14,11 +14,11 @@
   "container": {
     "build": {
       "nixFile": "pup.nix",
-      "nixFileSha256": "899d292f2482d12a36b81dc3230bc79f5278f65d8486b2fb04ce4ad4a50eeabe"
+      "nixFileSha256": "8a4f62eef733b320b3d6531f71da7c03a6e09c23029579596e60ab56631167a9"
     },
     "services": [
       {
-        "name": "c",
+        "name": "pup_c",
         "command": {
           "exec": "/bin/run.sh",
           "cwd": "",

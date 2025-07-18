@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
   "meta": {
-    "name": "golang",
+    "name": "pup_golang",
     "version": "0.0.1",
     "logoPath": "logo.png",
     "shortDescription": "",
@@ -14,11 +14,11 @@
   "container": {
     "build": {
       "nixFile": "pup.nix",
-      "nixFileSha256": "5f8d31d5312436902dfb09d7063366c2f7cd44aa5a827683a43cb83380e7c7d4"
+      "nixFileSha256": "2f0e1e71f7dec54ff77a704055fb535473b9e7aaffcba31161d0db5c2eabb509"
     },
     "services": [
       {
-        "name": "golang",
+        "name": "pup_golang",
         "command": {
           "exec": "/bin/run.sh",
           "cwd": "",

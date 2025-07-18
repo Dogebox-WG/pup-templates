@@ -1,7 +1,7 @@
 { pkgs ? import <nixpkgs> {} }:
 
 let
-  cpp_bin = pkgs.stdenv.mkDerivation {
+  pup_cpp_bin = pkgs.stdenv.mkDerivation {
     name = "cpp";
     src = ./.;
     buildPhase = ''
@@ -13,11 +13,11 @@ let
     '';
   };
 
-  cpp = pkgs.writeScriptBin "run.sh" ''
+  pup_cpp = pkgs.writeScriptBin "run.sh" ''
     #!${pkgs.stdenv.shell}
-    ${cpp_bin}/bin/cpp
+    ${pup_cpp_bin}/bin/cpp
   '';
 in
 {
-  inherit cpp;
+  inherit pup_cpp;
 }

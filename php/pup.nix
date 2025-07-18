@@ -1,7 +1,7 @@
 { pkgs ? import <nixpkgs> {} }:
 
 let
-  php = pkgs.writeScriptBin "run.sh" ''
+  pup_php = pkgs.writeScriptBin "run.sh" ''
     #!${pkgs.stdenv.shell}
     cd /pup
 
@@ -9,5 +9,5 @@ let
   '';
 in
 {
-  inherit php;
+  inherit pup_php;
 }

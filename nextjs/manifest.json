@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
   "meta": {
-    "name": "nextjs",
+    "name": "pup_nextjs",
     "version": "1.0.0",
     "logoPath": "logo.png",
     "shortDescription": "",
@@ -14,11 +14,11 @@
   "container": {
     "build": {
       "nixFile": "pup.nix",
-      "nixFileSha256": "cd25da5b1d5bf8abf56fff1c087768b7098a17020e13644aed6f801a899ad95f"
+      "nixFileSha256": "abb2839626ba29ae299dfcda7ade005b821a74059107ff2f9664c033d6475e1a"
     },
     "services": [
       {
-        "name": "nextjs",
+        "name": "pup_nextjs",
         "command": {
           "exec": "/bin/run.sh",
           "cwd": "",

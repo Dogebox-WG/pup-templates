@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
   "meta": {
-    "name": "php",
+    "name": "pup_php",
     "version": "0.0.1",
     "logoPath": "logo.png",
     "shortDescription": "",
@@ -14,11 +14,11 @@
   "container": {
     "build": {
       "nixFile": "pup.nix",
-      "nixFileSha256": "ab2048a2723f3b832c0693c9cedf604d37a00ebe2c34013f006750310ef02f95"
+      "nixFileSha256": "fa670f8b567811d7edab3a5781d81f24736e443b7e7824ebe7d8db3f9a803871"
     },
     "services": [
       {
-        "name": "php",
+        "name": "pup_php",
         "command": {
           "exec": "/bin/run.sh",
           "cwd": "",

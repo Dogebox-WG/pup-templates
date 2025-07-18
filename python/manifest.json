@@ -1,44 +1,44 @@
 {
-    "manifestVersion": 1,
-    "meta": {
-      "name": "python",
-      "version": "0.0.1",
-      "logoPath": "logo.png",
-      "shortDescription": "",
-      "longDescription": "",
-      "upstreamVersions": null
+  "manifestVersion": 1,
+  "meta": {
+    "name": "pup_python",
+    "version": "0.0.1",
+    "logoPath": "logo.png",
+    "shortDescription": "",
+    "longDescription": "",
+    "upstreamVersions": null
+  },
+  "config": {
+    "sections": null
+  },
+  "container": {
+    "build": {
+      "nixFile": "pup.nix",
+      "nixFileSha256": "a1f5f7ee7a8f39f6faa2203676d5143c4dd52b041b3c30117b41996f27849280"
     },
-    "config": {
-      "sections": null
-    },
-    "container": {
-      "build": {
-        "nixFile": "pup.nix",
-        "nixFileSha256": "ba39e12b39a9427a9212f6e527be283d888f439eb7cbb05e360dc48e205c2416"
-      },
-      "services": [
-        {
-          "name": "python",
-          "command": {
-            "exec": "/bin/run.sh",
-            "cwd": "",
-            "env": null
-          }
+    "services": [
+      {
+        "name": "pup_python",
+        "command": {
+          "exec": "/bin/run.sh",
+          "cwd": "",
+          "env": null
         }
-      ],
-      "exposes": [
-        {
-          "name": "UI",
-          "type": "http",
-          "port": 8080,
-          "interfaces": null,
-          "listenOnHost": false,
-          "webUI": true
-        }
-      ],
-      "requiresInternet": false
-    },
-    "interfaces": null,
-    "dependencies": [],
-    "metrics": null
-  } 
+      }
+    ],
+    "exposes": [
+      {
+        "name": "UI",
+        "type": "http",
+        "port": 8080,
+        "interfaces": null,
+        "listenOnHost": false,
+        "webUI": true
+      }
+    ],
+    "requiresInternet": false
+  },
+  "interfaces": null,
+  "dependencies": [],
+  "metrics": null
+}

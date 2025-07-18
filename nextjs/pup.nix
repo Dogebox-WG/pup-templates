@@ -3,7 +3,7 @@
 let
   nextjs-src = ./.;
 
-  nextjs-prod = pkgs.buildNpmPackage {
+  pup_nextjs_prod = pkgs.buildNpmPackage {
     pname = "nextjs";
     version = "1.0.0";
     src = nextjs-src;
@@ -21,7 +21,7 @@ let
     '';
   };
 
-  nextjs-dev = pkgs.writeScriptBin "run.sh" ''
+  pup_nextjs_dev = pkgs.writeScriptBin "run.sh" ''
     #!${pkgs.stdenv.shell}
     cd /pup
 
@@ -35,10 +35,10 @@ let
     npm run dev -- -p $PORT -H $HOSTNAME
   '';
 
-  nextjs = pkgs.writeScriptBin "run.sh" ''
+  pup_nextjs = pkgs.writeScriptBin "run.sh" ''
     #!${pkgs.stdenv.shell}
 
-    cd ${nextjs-prod}
+    cd ${pup_nextjs_prod}
 
     export NODE_ENV=production
     export PORT=8080
@@ -49,5 +49,5 @@ let
 
 in
 {
-  inherit nextjs nextjs-dev;
+  inherit pup_nextjs pup_nextjs_dev;
 }

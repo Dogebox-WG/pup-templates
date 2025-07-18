@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
   "meta": {
-    "name": "rust",
+    "name": "pup_rust",
     "version": "0.0.1",
     "logoPath": "logo.png",
     "shortDescription": "",
@@ -14,11 +14,11 @@
   "container": {
     "build": {
       "nixFile": "pup.nix",
-      "nixFileSha256": "6c03852c69df1078b3e0bf853413bc255812cc57868437a86a52fff15ff52dbc"
+      "nixFileSha256": "113f43f86975965e49d14590ff29ece677a58c393e7afcfdcacb3c53dcd179f8"
     },
     "services": [
       {
-        "name": "rust",
+        "name": "pup_rust",
         "command": {
           "exec": "/bin/run.sh",
           "cwd": "",
